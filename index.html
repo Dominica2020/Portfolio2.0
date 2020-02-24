@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Bootstrap Theme Simply Me</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font: 20px Montserrat, sans-serif;
+        line-height: 1.8;
+        color: #f5f6f7;
+      }
+      p {
+        font-size: 16px;
+      }
+      .margin {
+        margin-bottom: 45px;
+      }
+      .bg-1 {
+        background-color: #2186e4d2; /* Green */
+        color: #ffffff;
+      }
+      .bg-2 {
+        background-color: #474e5d; /* Dark Blue */
+        color: #ffffff;
+      }
+      .bg-3 {
+        background-color: #ffffff; /* White */
+        color: #555555;
+      }
+      .bg-4 {
+        background-color: #2f2f2f; /* Black Gray */
+        color: #fff;
+      }
+      .container-fluid {
+        padding-top: 70px;
+        padding-bottom: 70px;
+      }
+      .navbar {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+        font-size: 12px;
+        letter-spacing: 5px;
+      }
+      .navbar-nav li a:hover {
+        color: #2186e4 !important;
+      }
+
+      .bio {
+        font-size: 16;
+        text-align: justify;
+        margin-bottom: 15px;
+      }
+
+      #hide {
+        display: none;
+        font-size: 20px;
+      }
+
+      .button {
+        text-align: center;
+      }
+
+      .fa {
+        padding: 20px;
+        font-size: 20px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+      }
+
+      .fa:hover {
+        opacity: 0.7;
+      }
+
+      .fa-linkedin {
+        background: #007bb5;
+        color: white;
+      }
+
+      .fa-github {
+        background: white;
+        color: black;
+      }
+
+      #copyright {
+        margin-top: 40px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Dominica Patterson</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#aboutMe">ABOUT</a></li>
+            <li><a href="#myWork">WORK</a></li>
+            <li><a href="#contactMe">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- First Container -->
+    <div class="container-fluid bg-1 text-center">
+      <h3 class="margin">Who Am I?</h3>
+      <img
+        src="assets/images/portpic1.jpeg"
+        class="img-responsive img-circle margin"
+        style="display:inline"
+        alt="Portfolio Picture"
+        width="350"
+        height="350"
+      />
+      <h3>I'm a Full Stack Web Developer</h3>
+    </div>
+
+    <!-- Second Container -->
+    <div class="container-fluid bg-2">
+      <h3 class="margin text-center" id="aboutMe">About</h3>
+      <p class="bio">
+        "Hello, World!" I am a dynamic professional with a passion for
+        entrepreneurship, Spanish & life-long learning. After several years
+        studying earth science, exploring fossils & working in higher education,
+        I found my calling in tech. I am currently training to become a Full
+        Stack Web Developer at the Coding Boot Camp at UCLA Extension. I enjoy
+        creating, problem solving, & learning developer tools & technologies. My
+        mission is to use my skills in programming & Spanish to help
+        individuals, teams & organizations with customized web solutions.
+      </p>
+
+      <p class="bio">
+        My diverse background has equipped me well in business, critical
+        thinking, and communication. Some of my favorite hobbies include
+        international travel, visitng museums, architectural and historical
+        tours, practicing Spanish, and running.
+      </p>
+
+      <button
+        type="button"
+        class="btn btn-primary btn-lg center-block"
+        id="revealFacts"
+      >
+        Reveal Random Facts!
+      </button>
+
+      <div id="hide">
+        <p class="text-center">> I lived and studied in the UK twice</p>
+        <p class="text-center">> My favorite city is London</p>
+        <p class="text-center">
+          > I found trilobite fossils in both Southern California and Germany
+        </p>
+        <p class="text-center">
+          > I've experienced absolute darkness inside of an old Welsh Coal Mine
+        </p>
+        <p class="text-center">> I love muscle and classic cars</p>
+        <p class="text-center">
+          > My favorite music is from the 60's up until the 90's
+        </p>
+        <p class="text-center">
+          > I have a formidable collection of souvenir plush animals
+        </p>
+        <p class="text-center">
+          > I was a pretty strong sprinter back in the day
+        </p>
+      </div>
+    </div>
+
+    <!-- Third Container (Grid) -->
+    <div class="container-fluid bg-3 text-center">
+      <h3 class="margin" id="myWork">My Work</h3>
+      <br />
+      <div class="row">
+        <div class="col-sm-4">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <img
+            src="birds1.jpg"
+            class="img-responsive margin"
+            style="width:100%"
+            alt="Image"
+          />
+        </div>
+        <div class="col-sm-4">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <img
+            src="birds2.jpg"
+            class="img-responsive margin"
+            style="width:100%"
+            alt="Image"
+          />
+        </div>
+        <div class="col-sm-4">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <img
+            src="birds3.jpg"
+            class="img-responsive margin"
+            style="width:100%"
+            alt="Image"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-4 text-center" id="contactMe">
+      <p>
+        <a href="https://www.linkedin.com/in/dominicap/" class="fa fa-linkedin">in</a>
+        <a href="https://github.com/Dominica2020" class="fa fa-github">GH</a>
+      </p>
+      <p id="copyright">Copyright © 2020</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+      $("button").click(function() {
+        $("#hide").css("display", "block");
+        $("button").css("display", "none");
+      });
+    </script>
+  </body>
+</html>
