@@ -96,6 +96,32 @@
       #copyright {
         margin-top: 40px;
       }
+
+      /* The animation code */
+      @keyframes example {
+        0% {
+          font-size:x-large;
+        }
+        25% {
+          font-size: large;
+        }
+        50% {
+          font-size: medium;
+        }
+        100% {
+          font-size:x-large;
+        }
+      }
+      #logoName {
+        height: 50px;
+        animation-name: example;
+        animation-duration: 5s;
+      }
+      #whoAmI {
+        animation-name: example;
+        animation-duration: 5s;
+      }
+
     </style>
   </head>
   <body>
@@ -113,7 +139,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Dominica Patterson</a>
+          <a class="navbar-brand" id="logoName">Dominica Patterson</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
@@ -127,14 +153,16 @@
 
     <!-- First Container -->
     <div class="container-fluid bg-1 text-center">
-      <h3 class="margin">Who Am I?</h3>
-      <a href="#aboutMe"><img
-        src="assets/images/portpic1.jpeg"
-        class="img-responsive img-circle margin"
-        style="display:inline"
-        alt="Portfolio Picture"
-        width="350"
-        height="350"
+      <h3 class="margin" id="whoAmI">Who Am I?</h3>
+      <a href="#aboutMe"
+        ><img
+          src="assets/images/portpic1.jpeg"
+          class="img-responsive img-circle margin"
+          id="bioPic"
+          style="display:inline"
+          alt="Portfolio Picture"
+          width="350"
+          height="350"
       /></a>
       <h3>I'm a Full Stack Web Developer</h3>
     </div>
@@ -244,7 +272,7 @@
     <!-- Fourth Container (Contact) -->
     <div class="container-fluid bg-3 text-center" id="contactMe">
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-4">
           <img
             src="assets/images/emailicon0.png"
             class="img-responsive"
@@ -254,7 +282,17 @@
           />
           <p>Dominica.Patterson@gmail.com</p>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-4">
+          <img
+            src="assets/images/location.png"
+            class="img-responsive"
+            width="40"
+            height="40"
+            style="display:inline"
+          />
+          <p>Los Angeles, CA</p>
+        </div>
+        <div class="col-sm-4">
           <img
             src="assets/images/phonei.png"
             class="img-responsive"
@@ -271,26 +309,30 @@
     <footer class="container-fluid bg-4 text-center" id="socialLinks">
       <div class="row">
         <div class="col-sm-12">
-          <a href="https://www.linkedin.com/in/dominicap/"><img
-            src="assets/images/linkedinicon.png"
-            class="img-responsive"
-            width="40"
-            height="40"
-            style="display:inline"
+          <a href="https://www.linkedin.com/in/dominicap/"
+            ><img
+              src="assets/images/linkedinicon.png"
+              class="img-responsive"
+              width="40"
+              height="40"
+              style="display:inline"
           /></a>
-          <a href="https://github.com/Dominica2020"><img
-            src="assets/images/githubiconblk.png"
-            class="img-responsive"
-            width="40"
-            height="40"
-            style="display:inline"
+          <a href="https://github.com/Dominica2020"
+            ><img
+              src="assets/images/githubiconblk.png"
+              class="img-responsive"
+              width="40"
+              height="40"
+              style="display:inline"
           /></a>
-          <a href="https://drive.google.com/file/d/1vTIy8KmsWOw0Bd1PiLbXtu6oaM0V18sk/view?usp=sharing"><img
-            src="assets/images/resumeicon.png"
-            class="img-responsive"
-            width="40"
-            height="40"
-            style="display:inline"
+          <a
+            href="https://drive.google.com/file/d/1vTIy8KmsWOw0Bd1PiLbXtu6oaM0V18sk/view?usp=sharing"
+            ><img
+              src="assets/images/resumeicon.png"
+              class="img-responsive"
+              width="40"
+              height="40"
+              style="display:inline"
           /></a>
           <p id="copyright">© Copyright 2020</p>
         </div>
@@ -299,6 +341,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script>
       $("button").click(function() {
         $("#hide").css("display", "block");
