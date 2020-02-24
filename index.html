@@ -73,32 +73,24 @@
         text-align: center;
       }
 
+      h4 {
+        background-color: #2186e4d2;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
       #contactMe {
         background-color: #2186e4d2;
         color: #ffffff;
       }
 
-      .fa {
-        padding: 20px;
-        font-size: 20px;
-        width: 50px;
-        text-align: center;
-        text-decoration: none;
-        margin: 5px 2px;
-      }
-
-      .fa:hover {
+      img:hover {
         opacity: 0.7;
       }
 
-      .fa-linkedin {
-        background: #007bb5;
-        color: white;
-      }
-
-      .fa-github {
-        background: white;
-        color: black;
+      h4:hover {
+        opacity: 0.7;
       }
 
       #copyright {
@@ -136,20 +128,20 @@
     <!-- First Container -->
     <div class="container-fluid bg-1 text-center">
       <h3 class="margin">Who Am I?</h3>
-      <img
+      <a href="#aboutMe"><img
         src="assets/images/portpic1.jpeg"
         class="img-responsive img-circle margin"
         style="display:inline"
         alt="Portfolio Picture"
         width="350"
         height="350"
-      />
+      /></a>
       <h3>I'm a Full Stack Web Developer</h3>
     </div>
 
     <!-- Second Container -->
-    <div class="container-fluid bg-2">
-      <h3 class="margin text-center" id="aboutMe">About</h3>
+    <div class="container-fluid bg-2" id="aboutMe">
+      <h3 class="margin text-center">About</h3>
       <p class="bio">
         "Hello, World!" I am a dynamic professional with a passion for
         entrepreneurship, Spanish & life-long learning. After several years
@@ -199,42 +191,51 @@
     </div>
 
     <!-- Third Container (Grid) -->
-    <div class="container-fluid bg-3 text-center">
-      <h3 class="margin" id="myWork">My Work</h3>
+    <div class="container-fluid bg-3 text-center" id="myWork">
+      <h3 class="margin">My Work</h3>
       <br />
       <div class="row">
         <div class="col-sm-4">
-          <h4>
-            Crystals Collector!
-          </h4>
-          <img
-            src="assets/images/pink.png"
-            class="img-responsive margin"
-            style="width:100%"
-            alt="diamond-crystal"
-          />
+          <a href="https://meghedi.github.io/project-one/"
+            ><h4>
+              IPHY Weather
+            </h4></a
+          >
+          <a href="https://meghedi.github.io/project-one/"
+            ><img
+              src="assets/images/weather2.png"
+              class="img-responsive margin"
+              style="width:100%"
+              alt="weather"
+          /></a>
         </div>
         <div class="col-sm-4">
-          <h4>
-            Totally Trivial Trivia
-          </h4>
-          <img
-            src="assets/images/question gry.png"
-            class="img-responsive margin"
-            style="width:100%"
-            alt="question-mark"
-          />
+          <a href="https://dominica2020.github.io/unit-4-game/"
+            ><h4>
+              Crystals Collector!
+            </h4></a
+          >
+          <a href="https://dominica2020.github.io/unit-4-game/"
+            ><img
+              src="assets/images/blackdiamond3.png"
+              class="img-responsive margin"
+              style="width:100%"
+              alt="diamond-crystal"
+          /></a>
         </div>
         <div class="col-sm-4">
-          <h4>
-            IPHY Weather
-          </h4>
-          <img
-            src="assets/images/weather2.png"
-            class="img-responsive margin"
-            style="width:100%"
-            alt="weather"
-          />
+          <a href="https://dominica2020.github.io/TriviaGame/"
+            ><h4>
+              Totally Trivial Trivia
+            </h4></a
+          >
+          <a href="https://dominica2020.github.io/TriviaGame/"
+            ><img
+              src="assets/images/question gry.png"
+              class="img-responsive margin"
+              style="width:100%"
+              alt="question-mark"
+          /></a>
         </div>
       </div>
     </div>
@@ -243,25 +244,56 @@
     <div class="container-fluid bg-3 text-center" id="contactMe">
       <div class="row">
         <div class="col-sm-6">
-          <img src="assets/images/emailicon0.png" class="img-responsive" width=40 height=40 style="display:inline"/>
+          <img
+            src="assets/images/emailicon0.png"
+            class="img-responsive"
+            width="40"
+            height="40"
+            style="display:inline"
+          />
           <p>Dominica.Patterson@gmail.com</p>
         </div>
         <div class="col-sm-6">
-          <img src="assets/images/phonei.png" class="img-responsive" width=40 height=40 style="display:inline"/>
+          <img
+            src="assets/images/phonei.png"
+            class="img-responsive"
+            width="40"
+            height="40"
+            style="display:inline"
+          />
           <p>818 . 220 . 8303</p>
         </div>
       </div>
     </div>
 
-    <!-- Footer -->
+    <!-- Footer  href="https://www.linkedin.com/in/dominicap/" href="https://github.com/Dominica2020"-->
     <footer class="container-fluid bg-4 text-center" id="socialLinks">
-      <p>
-        <a href="https://www.linkedin.com/in/dominicap/" class="fa fa-linkedin"
-          >in</a
-        >
-        <a href="https://github.com/Dominica2020" class="fa fa-github">GH</a>
-      </p>
-      <p id="copyright">Copyright © 2020</p>
+      <div class="row">
+        <div class="col-sm-12">
+          <a href="https://www.linkedin.com/in/dominicap/"><img
+            src="assets/images/linkedinicon.png"
+            class="img-responsive"
+            width="40"
+            height="40"
+            style="display:inline"
+          /></a>
+          <a href="https://github.com/Dominica2020"><img
+            src="assets/images/githubiconblk.png"
+            class="img-responsive"
+            width="40"
+            height="40"
+            style="display:inline"
+          /></a>
+          <img
+            src="assets/images/resumeicon.png"
+            class="img-responsive"
+            width="40"
+            height="40"
+            style="display:inline"
+          />
+          <p id="copyright">© Copyright 2020</p>
+        </div>
+      </div>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -270,6 +302,11 @@
       $("button").click(function() {
         $("#hide").css("display", "block");
         $("button").css("display", "none");
+      });
+
+      $("#hide").click(function() {
+        $("#hide").css("display", "none");
+        $("button").css("display", "block");
       });
     </script>
   </body>
