@@ -19,32 +19,40 @@
         line-height: 1.8;
         color: #f5f6f7;
       }
+
       p {
         font-size: 16px;
       }
+
       .margin {
         margin-bottom: 45px;
       }
+
       .bg-1 {
         background-color: #2186e4d2; /* Green */
         color: #ffffff;
       }
+
       .bg-2 {
         background-color: #474e5d; /* Dark Blue */
         color: #ffffff;
       }
+
       .bg-3 {
         background-color: #ffffff; /* White */
         color: #555555;
       }
+
       .bg-4 {
         background-color: #2f2f2f; /* Black Gray */
         color: #fff;
       }
+
       .container-fluid {
         padding-top: 70px;
         padding-bottom: 70px;
       }
+
       .navbar {
         padding-top: 15px;
         padding-bottom: 15px;
@@ -54,6 +62,7 @@
         font-size: 12px;
         letter-spacing: 5px;
       }
+
       .navbar-nav li a:hover {
         color: #2186e4 !important;
       }
@@ -66,7 +75,6 @@
 
       #hide {
         display: none;
-        font-size: 20px;
       }
 
       .button {
@@ -78,6 +86,10 @@
         color: white;
         padding: 10px;
         border-radius: 5px;
+      }
+
+      #disappear, .point {
+        color: #449ae8;
       }
 
       #contactMe {
@@ -112,16 +124,12 @@
           font-size:x-large;
         }
       }
+
       #logoName {
         height: 50px;
         animation-name: example;
         animation-duration: 5s;
       }
-      #whoAmI {
-        animation-name: example;
-        animation-duration: 5s;
-      }
-
     </style>
   </head>
   <body>
@@ -197,25 +205,25 @@
       </button>
 
       <div id="hide">
-        <p class="text-center">> I lived and studied in the UK twice</p>
-        <p class="text-center">> My favorite city is London</p>
-        <p class="text-center">
-          > I found trilobite fossils in both Southern California and Germany
+        <p class="text-center"><span class="point">></span> I lived and studied in the UK twice</p>
+        <p class="text-center"><span class="point">></span> My favorite city is London</p>
+        <p class="text-center"><span class="point">></span>
+          I found trilobite fossils in both Southern California and Germany
         </p>
-        <p class="text-center">
-          > I've experienced absolute darkness inside of an old Welsh Coal Mine
+        <p class="text-center"><span class="point">></span>
+          I've experienced absolute darkness inside of an old Welsh Coal Mine
         </p>
-        <p class="text-center">> I love muscle and classic cars</p>
-        <p class="text-center">
-          > My favorite music is from the 60's up until the 90's
+        <p class="text-center"><span class="point">></span> I love muscle and classic cars</p>
+        <p class="text-center"><span class="point">></span>
+          My favorite music is from the 60's up until the 90's
         </p>
-        <p class="text-center">
-          > I have a formidable collection of souvenir plush animals
+        <p class="text-center"><span class="point">></span>
+          I have a formidable collection of souvenir plush animals
         </p>
-        <p class="text-center">
-          > I was a pretty strong sprinter back in the day
+        <p class="text-center"><span class="point">></span>
+          I was a pretty strong sprinter back in the day
         </p>
-        <p class="text-center"><u>(Hide)</u></p>
+        <p class="text-center" id="disappear"><u>(Hide)</u></p>
       </div>
     </div>
 
@@ -246,7 +254,7 @@
           >
           <a href="https://dominica2020.github.io/unit-4-game/"
             ><img
-              src="assets/images/blackdiamond3.png"
+              src="assets/images/blue.png"
               class="img-responsive margin"
               style="width:100%"
               alt="diamond-crystal"
@@ -276,6 +284,7 @@
           <img
             src="assets/images/emailicon0.png"
             class="img-responsive"
+            id="icon"
             width="40"
             height="40"
             style="display:inline"
@@ -286,6 +295,7 @@
           <img
             src="assets/images/location.png"
             class="img-responsive"
+            id="icon"
             width="40"
             height="40"
             style="display:inline"
@@ -296,6 +306,7 @@
           <img
             src="assets/images/phonei.png"
             class="img-responsive"
+            id="icon"
             width="40"
             height="40"
             style="display:inline"
