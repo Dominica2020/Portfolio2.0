@@ -77,6 +77,10 @@ body {
     color: #449ae8;
   }
 
+  #disappear:hover {
+    color: white;
+  }
+
   #contactMe {
     background-color: #2186e4d2;
     color: #ffffff;
