@@ -51,18 +51,50 @@ body {
     color: #2186e4 !important;
   }
 
+  #logoName {
+    font-weight: 800;
+    font-size: 2.5rem;
+  }
+
+  #whoAmI {
+    font-size: 5rem;
+    font-weight: 900;
+  }
+
+  #bioPic {
+    filter: grayscale(100%);
+  }
+
+  #aboutMe {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #myWork {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
   .bio {
-    font-size: 16;
+    font-size: 18px;
     text-align: justify;
     margin-bottom: 15px;
+    line-height: 2;
+  }
+
+  #revealFacts {
+    background-color: #2186e4d2;
+    margin-top: 40px;
+    
   }
 
   #hide {
     display: none;
   }
 
-  .button {
-    text-align: center;
+  h3 {
+    font-size: 4rem;
+    font-weight: 900;
   }
 
   h4 {
@@ -70,6 +102,7 @@ body {
     color: white;
     padding: 10px;
     border-radius: 5px;
+    font-size: 2.5rem;
   }
 
   #disappear,
@@ -90,8 +123,16 @@ body {
     opacity: 0.7;
   }
 
+  #revealFacts:hover {
+    font-size: 2rem;
+  }
+
   h4:hover {
     opacity: 0.7;
+  }
+
+  .social {
+    margin: 1%;
   }
 
   #copyright {
