@@ -79,6 +79,11 @@ body {
     font-size: 18px;
     margin-bottom: 15px;
     line-height: 2;
+    text-align: center;
+  }
+
+  hr {
+    width: 20%;
   }
 
   #revealFacts {
