@@ -13,8 +13,11 @@ body {
   }
 
   .bg-1 {
-    background-color: #2186e4d2; 
+    background-color: transparent;
+    background-image: url(Background.png);
     color: #ffffff;
+
+    /* bg-1 & background-color: #2186e4d2; */
   }
 
   .bg-2 {
