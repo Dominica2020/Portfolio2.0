@@ -57,11 +57,19 @@ body {
   #logoName {
     font-weight: 800;
     font-size: 2.5rem;
+    color: #d0622c;
+    letter-spacing: 5px;
   }
 
   #whoAmI {
-    font-size: 5rem;
+    font-size: 7rem;
     font-weight: 900;
+    letter-spacing: 5px;
+  }
+
+  .mern {
+    font-size: 5rem;
+    letter-spacing: 5px;
   }
 
   #bioPic {
@@ -87,10 +95,11 @@ body {
 
   hr {
     width: 20%;
+    
   }
 
   #revealFacts {
-    background-color: #2186e4d2;
+    background-color: #d0622c;
     margin-top: 40px;
     
   }
@@ -102,6 +111,7 @@ body {
   h3 {
     font-size: 4rem;
     font-weight: 900;
+    letter-spacing: 5px;
   }
 
   h4 {
@@ -110,6 +120,7 @@ body {
     padding: 10px;
     border-radius: 5px;
     font-size: 2.5rem;
+    letter-spacing: 1px;
   }
 
   #disappear,
@@ -122,7 +133,7 @@ body {
   }
 
   #contactMe {
-    background-color: #2186e4d2;
+    background-color: #d0622c;
     color: #ffffff;
   }
 
