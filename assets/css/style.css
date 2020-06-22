@@ -137,6 +137,11 @@ body {
     color: #ffffff;
   }
 
+  .email {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
   img:hover {
     opacity: 0.7;
   }
