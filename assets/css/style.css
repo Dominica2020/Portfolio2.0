@@ -91,6 +91,7 @@ body {
     margin-bottom: 15px;
     line-height: 2;
     text-align: center;
+    letter-spacing: 2px;
   }
 
   hr {
@@ -101,11 +102,18 @@ body {
   #revealFacts {
     background-color: #d0622c;
     margin-top: 40px;
-    
+    letter-spacing: 1px;
+  }
+
+  .para {
+    color: #e47944;
+    letter-spacing: 2px;
+    line-height: 2;
   }
 
   #hide {
     display: none;
+    text-align: center;
   }
 
   h3 {
@@ -123,11 +131,16 @@ body {
     letter-spacing: 1px;
   }
 
-  #disappear,
   .point {
     color: #449ae8;
   }
 
+  #disappear {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-top: 40px;
+  }
+  
   #disappear:hover {
     color: white;
   }
@@ -135,9 +148,10 @@ body {
   #contactMe {
     background-color: #d0622c;
     color: #ffffff;
+    letter-spacing: 1px;
   }
 
-  .email {
+  .message {
     text-decoration: none;
     color: #ffffff;
   }
