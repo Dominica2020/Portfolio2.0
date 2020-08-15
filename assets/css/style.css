@@ -96,7 +96,6 @@ body {
 
   hr {
     width: 20%;
-    
   }
 
   #revealFacts {
@@ -114,6 +113,10 @@ body {
   #hide {
     display: none;
     text-align: center;
+    background-color: #ffffffde;
+    border-radius: 12px;
+    padding: 5%;
+  
   }
 
   h3 {
